@@ -106,6 +106,8 @@ void zad23()
 			cout << "Niepoprawny input\n";
 			exit(0);//zakonczenie programu
 		}
+		else
+			break;
 	}
 
 	switch (liczba)
@@ -171,6 +173,7 @@ void zad23()
 
 int main()
 {
+	/*
 	//dodatkowe();
 	int szereg_num = 0;
 	cout << "Podaj dla jakiej liczby chcesz policzyc szereg: ";
@@ -179,5 +182,6 @@ int main()
 
 	zad22();
 	bonus();
+	*/
 	zad23();
 }
