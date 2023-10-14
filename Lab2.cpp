@@ -93,6 +93,82 @@ void bonus()
 	cout << "\n";
 }
 
+void zad23()
+{
+	int liczba = 0;
+	while (true)
+	{
+		cout << "Podaj liczbe w przedziale [1-12]: ";
+		cin >> liczba;
+
+		if (!cin || liczba < 1 || liczba > 12)
+		{
+			cout << "Niepoprawny input\n";
+			exit(0);//zakonczenie programu
+		}
+	}
+
+	switch (liczba)
+	{
+	case 1:
+		cout << "Styczen\n";
+		cout << "Liczba dni: 31\n";
+		break;
+	case 2:
+		cout << "Luty\n";
+		cout << "Liczba dni: 28\n";
+		break;
+	case 3:
+		cout << "Marzec\n";
+		cout << "Liczba dni: 31\n";
+		break;
+	case 4:
+		cout << "Kwiecien\n";
+		cout << "Liczba dni: 30\n";
+		break;
+	case 5:
+		cout << "Maj\n";
+		cout << "Liczba dni: 31\n";
+		break;
+	case 6:
+		cout << "Czerwiec\n";
+		cout << "Liczba dni: 30\n";
+		break;
+	case 7:
+		cout << "Lipiec\n";
+		cout << "Liczba dni: 31\n";
+		break;
+	case 8:
+		cout << "Sierpien\n";
+		cout << "Liczba dni: 31\n";
+		break;
+	case 9:
+		cout << "Wrzesien\n";
+		cout << "Liczba dni: 30\n";
+		break;
+	case 10:
+		cout << "Pazdziernik\n";
+		cout << "Liczba dni: 31\n";
+		break;
+	case 11:
+		cout << "Listopad\n";
+		cout << "Liczba dni: 30\n";
+		break;
+	case 12:
+		cout << "Grudzien\n";
+		cout << "Liczba dni: 31\n";
+		break;
+	}
+
+	if (liczba >= 4 && liczba <= 9)
+		cout << "Dzisiaj jest slonecznie\n";
+	else
+		cout << "Dzisiaj jest pochmurno\n";
+
+
+
+}
+
 int main()
 {
 	//dodatkowe();
@@ -103,4 +179,5 @@ int main()
 
 	zad22();
 	bonus();
+	zad23();
 }
